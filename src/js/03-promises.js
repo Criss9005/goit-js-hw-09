@@ -28,7 +28,7 @@ const form = document.querySelector('.form')
 form.addEventListener('submit', (e) => {
 e.preventDefault()
 let stepInt = parseInt(timeInit.value)
-   for (let i = 0; i <= amount.value; i++) {
+   for (let i = 0; i < amount.value; i++) {
      if (i == 0) {
        createPromise(i +1 , stepInt) 
       } else { 
